@@ -197,6 +197,9 @@ class Loader extends PluginBase {
 		"vi",
 		"gr",
 		"ko",
+		"ru",
+		"chs",
+		"cht",
 		"de"
 	];
 
@@ -228,6 +231,17 @@ class Loader extends PluginBase {
 
 		$this->saveResource("database_stmts/mysql.sql", true);
 		$this->saveResource("database_stmts/sqlite.sql", true);
+		$this->saveResource("config.yml", true);
+		$this->saveResource("pet_properties.yml", true);
+		$this->saveResource("languages/en.yml", true);
+		$this->saveResource("languages/nl.yml", true);
+		$this->saveResource("languages/vi.yml", true);
+		$this->saveResource("languages/gr.yml", true);
+		$this->saveResource("languages/ko.yml", true);
+		$this->saveResource("languages/de.yml", true);
+		$this->saveResource("languages/ru.yml", true);
+		$this->saveResource("languages/chs.yml", true);
+		$this->saveResource("languages/cht.yml", true);
 
 		SpoonDetector::printSpoon($this);
 
